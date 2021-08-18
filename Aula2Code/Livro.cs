@@ -7,31 +7,27 @@ namespace Aula2Code
         public string nome {get; private set;}
         public string descricao {get;set;}
         public decimal valor { get; set; }
-        public string isbn 
-        {
-            get
-            {
-                if(this.isbn.Length>10)
-                    return this.isbn;
-                else
-                    return "";
-            }
-            set
-            {
-                this.isbn = value;
-            }
-        }        
 
-        public Livro(int id, string nome, decimal valor)
+        public string isbn {get;set;}
+
+        public Autor autor { get; set; }
+
+        public Livro(int id, Autor autor,string nome, decimal valor)
         {
             this.id = id;
             this.nome=nome;
             this.valor=valor;
+            this.autor = autor;
         }
 
-        public void setLivro()
+        public void AplicarDesconto(decimal percDesconto)
         {
-            
+
+        }
+
+        public void Save(Livro livro)
+        {
+            //vai salvar o livro no bd
         }
     }
 }
