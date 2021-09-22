@@ -49,6 +49,7 @@ namespace ListTests
             //funções lambdas.
             var i = pessoas.FindIndex(x=>x.Idade == 20);
             var x = pessoas.FindIndex(x=>x.Idade == 50);
+            var result = pessoas.Where(x=>x.Idade>18).Count();
         }
 
         static void Lambdas()
@@ -66,6 +67,9 @@ namespace ListTests
 
             int oddNumbers = numbers.Count(n => n % 2 == 1);
             int soma = numbers.Sum();
+            double media = numbers.Average();
+            int maximo = numbers.Max();
+            var result = numbers.Where()
             Console.WriteLine($"lambda { oddNumbers }");
 
         }

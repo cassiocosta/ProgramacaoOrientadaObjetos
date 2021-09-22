@@ -1,0 +1,38 @@
+[
+    {
+        "Id":1,
+        "Cliente":{
+            "Id":101,
+            "Nome":"Cassio Costa",
+            "Fone":"51 98126 3079"
+        },
+        "DataEmissao":"2021/03/15",
+        "DataVencimento":"2021/04/15",
+        "Valor": 100,
+        "DataPgto":"2021/04/15"
+    },
+    {
+        "Id":2,
+        "Cliente":{
+            "Id":101,
+            "Nome":"Cassio Costa",
+            "Fone":"51 98126 3079"
+        },
+        "DataEmissao":"2021/03/15",
+        "DataVencimento":"2021/05/15",
+        "Valor": 100,
+        "DataPgto":"2021/05/15"
+    },
+    {
+        "Id":3,
+        "Cliente":{
+            "Id":101,
+            "Nome":"Cassio Costa",
+            "Fone":"51 98126 3079"
+        },
+        "DataEmissao":"2021/03/15",
+        "DataVencimento":"2021/06/15",
+        "Valor": 100,
+        "DataPgto":"2021/06/15"
+    }
+]

@@ -8,13 +8,9 @@ namespace SuperMercado
         public int Id { get; set; }
         public DateTime DataEmissao { get; set; }
         public Cliente Cliente { get; set; }
-        public List<ProdutosDoPedido> Itens { get; set; }
+        public List<Item> Itens { get; set; }
+
     }
 
-    public struct ProdutosDoPedido
-    {
-        int id;
-        string nome;
-    }
 
 }

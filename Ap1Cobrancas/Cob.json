@@ -1,0 +1,51 @@
+[
+    {
+        "Id":1,
+        "Cliente":{
+            "Id":101,
+            "Nome":"Cassio",
+            "Fone":"343434343"
+        },
+        "DataEmissao":"2021-05-26T00:00:00",
+        "DataVencimento":"2021-06-26T00:00:00",
+        "Valor": 100,
+        "DataPgto":"2021-06-26T00:00:00"
+    },
+    {
+        "Id":2,
+        "Cliente":{
+            "Id":101,
+            "Nome":"Cassio",
+            "Fone":"343434343"
+        },
+        "DataEmissao":"2021-05-26T00:00:00",
+        "DataVencimento":"2021-07-26T00:00:00",
+        "Valor": 100,
+        "DataPgto":"2021-07-26T00:00:00"
+    },
+    {
+        "Id":3,
+        "Cliente":{
+            "Id":101,
+            "Nome":"Cassio",
+            "Fone":"343434343"
+        },
+        "DataEmissao":"2021-05-26T00:00:00",
+        "DataVencimento":"2021-09-26T00:00:00",
+        "Valor": 100,
+        "DataPgto":null
+    },
+    {
+        "Id":4,
+        "Cliente":{
+            "Id":102,
+            "Nome":"Joana",
+            "Fone":"343434"
+        },
+        "DataEmissao":"2021-08-15T00:00:00",
+        "DataVencimento":"2021-09-15T00:00:00",
+        "Valor": 670,
+        "DataPgto":null
+    }
+
+]

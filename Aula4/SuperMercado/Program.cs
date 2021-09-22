@@ -1,4 +1,5 @@
-﻿using System;
+﻿using System.Numerics;
+using System;
 
 namespace SuperMercado
 {
@@ -6,9 +7,8 @@ namespace SuperMercado
     {
         static void Main(string[] args)
         {
-            Bike bicicleta = new Bike();
-
-
+            Bike bicicleta = new Bike(12,"biccross",150);
+            
             Produto produtoRecemNascido = new Produto(13,"Teclado");
             produtoRecemNascido.Valor = 250;
             produtoRecemNascido.QuantidadeEstoque = 15;
@@ -17,7 +17,7 @@ namespace SuperMercado
             produto.Valor = 159;
             produto.QuantidadeEstoque = 8;
 
-
+            
 
 
             Console.WriteLine($"O produto {produto.Nome} contém {produto.QuantidadeEstoque} em estoque.");
