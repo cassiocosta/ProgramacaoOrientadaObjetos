@@ -12,8 +12,8 @@ namespace ListTests
         {
             pessoas = new List<Pessoa>();
             
-            pessoas.Add(new Pessoa("Maria",43));
-            pessoas.Add(new Pessoa("Cassiano",20));
+            pessoas.Add(new Pessoa("Maria",43,eDiaSemana.seg));
+            pessoas.Add(new Pessoa("Cassiano",20,eDiaSemana.qui));
             pessoas.Add(new Pessoa("Gean",25));
 
             Console.WriteLine("Lista usando forEach Normal\n---------");
@@ -50,6 +50,7 @@ namespace ListTests
             var i = pessoas.FindIndex(x=>x.Idade == 20);
             var x = pessoas.FindIndex(x=>x.Idade == 50);
             var result = pessoas.Where(x=>x.Idade>18).Count();
+            pessoas.Where
         }
 
         static void Lambdas()
