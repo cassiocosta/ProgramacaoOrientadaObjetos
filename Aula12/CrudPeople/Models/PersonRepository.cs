@@ -1,39 +1,43 @@
 using System.Collections.Generic;
+using System.Linq;
+using Microsoft.EntityFrameworkCore;
 
 namespace CrudPeople.Models
 {
-    public class PersonRepository
+    public class PersonRepository : IPersonRepository
     {
-        public static List<Person> people = new List<Person>();
+        private DataContext context;
     
-        public PersonRepository()
+        public PersonRepository(DataContext context)
         {           
+            this.context = context;
         }
 
         public void Create(Person person)
         {
-            people.Add(person);
+            context.Add(person);
+            context.SaveChanges();
         }
         public List<Person> GetAll()
         {
-            return people;
+            return context.people.ToList();
         }
         
         public Person GetById(int id)
         {
-            return people.Find(i=>i.id == id);
+            return context.people.SingleOrDefault(i=>i.id == id);
         }
         
         public void Delete(int id)
         {
-            people.Remove(GetById(id));
+            context.people.Remove(GetById(id));
+            context.SaveChanges();
 
         }
         public void Update(Person person)
         {
-            var index  = people.FindIndex(x=>x.id == person.id);
-            people[index].name = person.name;
-            people[index].address = person.address;
+            context.Entry(person).State = EntityState.Modified;
+            context.SaveChanges();
         }
     }
 }
